@@ -2,10 +2,19 @@
 manage ssh connect
 
 
-#config [conf.toml]
+# install 
+  git clone https://github.com/yinzhiqing/ssh-manager.git
+  cd ssh-manager
+  git submodule init 
+  git submodule update
+
+# execute
+    python3 sshs.py
+
+#   config [conf.toml]
 [[host]]
     name = SHOW_NAME
-    host = "IP"
+    host = "ADDRESS"
     user = SSH_USER
     port = SSH_PORT
     passwd = SSH_PASSWORD
