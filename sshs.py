@@ -43,7 +43,7 @@ def connect():
 
 def sys_cmd(host):
     print("connect {}".format(host["name"]))
-    cmd = 'ssh {}@{} -p {}'.format(host["user"], host["host"], host["port"])
+    cmd = 'ssh -o ServerAliveInterval=30 {}@{} -p {}'.format(host["user"], host["host"], host["port"])
     os.system(cmd)
 
 if __name__ == "__main__":
