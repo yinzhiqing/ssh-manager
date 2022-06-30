@@ -1,0 +1,3 @@
+# !/bin/sh
+
+python3 $HOME/.local/bin/sshs_bin/sshs.py

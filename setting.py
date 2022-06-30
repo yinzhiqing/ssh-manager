@@ -9,7 +9,7 @@ class tomlopt(tomlbase):
     def __getattr__(self, name):
         return None
 
-setting = tomlopt("conf.toml")
+setting = tomlopt("/etc/sshs.toml")
 
 
 def run():

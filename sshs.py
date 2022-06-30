@@ -5,7 +5,6 @@ import sys
 from setting import setting
 
 def load_hosts():
-    print(setting.host)
     return setting.host
 
 

@@ -1,0 +1,25 @@
+# !/bin/sh
+
+local_path="$HOME/.local/bin"
+sshs_root=$local_path/sshs_bin
+sshs_conf_root=~/.config/sshs
+
+mkdir -p $sshs_conf_root
+mkdir -p $sshs_root
+
+cp -rf ./sshs $sshs_root 
+cp -rf ./*.py $sshs_root 
+cp -rf ./dependes $sshs_root 
+
+#sudo cp conf-templete.toml /etc/sshs.toml
+
+cd $local_path
+
+rm -rf sshs
+ln -s $sshs_root/sshs sshs
+
+#cd $sshs_root
+#rm sshs.toml
+#ln -s /etc/sshs.toml sshs.toml
+
+chmod a+x sshs
