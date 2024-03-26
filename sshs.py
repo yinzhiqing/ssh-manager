@@ -15,6 +15,10 @@ def select(n_i, i_n, trytimes, max_try = 3):
         
     sel_host = input("select host index/name: ")
     host = None
+    print(sel_host)
+    if sel_host.lower() in ["q", "quite"]:
+        exit(0)
+
     if sel_host in i_n:
         host = i_n[sel_host]
     elif sel_host in n_i:
