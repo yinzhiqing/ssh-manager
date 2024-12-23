@@ -6,7 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# 忽略.toml, 但不包括conf-templete.toml
 *.toml
+!conf-templete.toml
+
 
 # Distribution / packaging
 .Python
